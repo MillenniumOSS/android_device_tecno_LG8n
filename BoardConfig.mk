@@ -22,7 +22,7 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
-LOCAL_KERNEL := $(KERNEL_PATH)/Image.gz
+LOCAL_KERNEL := $(COMMON_GKI_PATH)/Image.gz
 PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel
 
@@ -45,7 +45,7 @@ BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/vendor_dlkm/*.ko)
 TARGET_OTA_ASSERT_DEVICE := LG8n,TECNO-LG8n,lg8n
 
 # Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+TARGET_KERNEL_SOURCE := $(COMMON_GKI_PATH)/kernel-headers
 
 # Inherit the proprietary files
 include vendor/tecno/LG8n/BoardConfigVendor.mk
