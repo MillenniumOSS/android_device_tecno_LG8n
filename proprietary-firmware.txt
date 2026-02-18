@@ -1,0 +1,15 @@
+## All proprietary files from this list, unless pinned and noted otherwise, are
+## from LG8n-H891OPAeAf-S-GL-240531V2678
+
+dpm.img;AB
+gz.img;AB
+lk.img;AB|9807bcfda7932f87791e536fa516ac84a7004ade
+logo.bin:logo.img;AB|b9aee280d27532469f8eee63fb46373740270d3b
+mcupm.img;AB
+md1img.img;AB
+pi_img.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
+tkv.img;AB
