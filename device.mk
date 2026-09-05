@@ -26,6 +26,8 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
 	FrameworksResOverlayLG8n \
+    Launcher3OverlayLG8n \
+    SettingsOverlayLG8n \
     SettingsProviderOverlayLG8n \
     SystemUIOverlayLG8n
 
