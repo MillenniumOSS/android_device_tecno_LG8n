@@ -17,11 +17,13 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Fingerprint
+ifneq ($(TARGET_NO_FP),true)
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+endif
 
 # Overlays
 PRODUCT_PACKAGES += \
